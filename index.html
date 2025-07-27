@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>GetSetGreen Podcast</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header nav {
+      margin-bottom: 10px;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .left-pane {
+      flex: 1;
+      min-width: 260px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .right-pane {
+      flex: 2;
+      min-width: 320px;
+      padding: 0;
+    }
+    .left-pane img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    .left-pane h3 {
+      font-size: 22px;
+      margin: 20px 0 10px;
+      color: #2c3e50;
+    }
+    .left-pane p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .left-pane ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 15px;
+      color: #555;
+      font-size: 15px;
+    }
+    .left-pane ul li {
+      margin-bottom: 8px;
+    }
+    section {
+      margin-bottom: 50px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 17px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      background: #1db954;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .cta-btn:hover {
+      background: #1ed760;
+    }
+    .episode-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .episode-card {
+      flex: 1 1 calc(48% - 10px);
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .episode-card:hover {
+      transform: scale(1.02);
+    }
+    .episode-card h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+    .episode-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .episode-card iframe {
+      width: 100%;
+      height: 152px;
+      border: none;
+      border-radius: 6px;
+    }
+    .contact p {
+      font-size: 17px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .episode-card {
+        flex: 1 1 100%;
+      }
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GetSetGreen Podcast</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#episodes">Episodes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left-pane" id="about">
+      <img src="your-image.jpg" alt="Pooja R V - Host" />
+      <h3>About GetSetGreen Podcast</h3>
+      <p>
+        GetSetGreen is a podcast dedicated to inspiring sustainable living through
+        stories of changemakers, innovative solutions, and practical tips for
+        reducing your environmental impact.
+      </p>
+
+      <h3>Meet Your Host: Pooja R V</h3>
+      <p>
+        I’m Pooja, an environmental enthusiast passionate about empowering
+        individuals and communities to make greener choices. With GetSetGreen, I
+        bring you engaging conversations with experts, activists, and innovators.
+      </p>
+
+      <h3>Why Listen?</h3>
+      <ul>
+        <li>Learn about circular fashion, renewable energy, and climate action.</li>
+        <li>Discover actionable eco-solutions you can implement right away.</li>
+        <li>Stay motivated with inspiring stories from real changemakers.</li>
+      </ul>
+
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is to equip you with knowledge and inspiration to live
+        sustainably and help create a healthier planet for future generations.
+      </p>
+
+      <h3>Listen on Spotify</h3>
+      <a
+        href="https://open.spotify.com/show/5VvIylITUh4tOu4faDPVSh"
+        class="cta-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Visit Spotify Show</a
+      >
+    </div>
+
+    <div class="right-pane">
+      <!-- Trailer Section -->
+      <section
+        class="trailer-section"
+        style="
+          margin-bottom: 40px;
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        "
+      >
+        <h2>Podcast Trailer</h2>
+        <iframe
+          src="https://open.spotify.com/embed/episode/0wUrpil1ysP3bxShp6Q86b"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allow="encrypted-media"
+          loading="lazy"
+        ></iframe>
+        <p style="margin-top: 10px;">
+          <a
+            href="https://open.spotify.com/episode/0wUrpil1ysP3bxShp6Q86b"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #1db954; text-decoration: none; font-weight: bold"
+            >Listen to Trailer on Spotify</a
+          >
+        </p>
+      </section>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <h2>Welcome to GetSetGreen</h2>
+        <p>
+          Join the journey—listen to conversations on sustainability, climate
+          action, and green innovation.
+        </p>
+        <a
+          href="https://open.spotify.com/embed/episode/6LUZpqwogS1kDO7r8PzKp6"
+          class="cta-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Listen to Latest Episode</a
+        >
+      </section>
+
+      <!-- Episodes Section -->
+      <section id="episodes">
+        <h2>Latest Episodes</h2>
+        <div class="episode-list" id="episodeList"></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Have queries or ideas? Email me:
+      <a href="mailto:getsetgreen@gmail.com">getsetgreen@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GetSetGreen Podcast | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const episodes = [
+      {
+        title: "S2‑E16: Regenerative Agri & Waste‑to‑Energy",
+        desc: "With Madhurima Prasad of Carbonlites.",
+        embed: "https://open.spotify.com/embed/episode/6LUZpqwogS1kDO7r8PzKp6",
+      },
+      {
+        title: "S2‑E15: Plastic Waste & EPR",
+        desc: "With Kohima Dhandhania (PlasticRecyclers).",
+        embed: "https://open.spotify.com/embed/episode/3ti30QD0QaLym375mXaANr",
+      },
+      {
+        title: "S2‑E14: Sustainable Fashion in India",
+        desc: "With Srinithya of Maleema.",
+        embed: "https://open.spotify.com/embed/episode/3GyKDjUymCLFM3idb2TyxV",
+      },
+      {
+        title: "S2‑E13: Demystifying ESG in India",
+        desc: "With Gokul Shekar (Carbon Collective).",
+        embed: "https://open.spotify.com/embed/episode/2PWzDG74x1oV6Xbc71DaDI",
+      },
+    ];
+
+    const container = document.getElementById("episodeList");
+    episodes.forEach((ep) => {
+      const card = document.createElement("div");
+      card.className = "episode-card";
+      card.innerHTML = `
+        <h4>${ep.title}</h4>
+        <p>${ep.desc}</p>
+        <iframe src="${ep.embed}" allow="encrypted-media" loading="lazy"></iframe>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
